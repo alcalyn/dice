@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    python:
+        image: python:3.6
+        container_name: dice_python
+        volumes:
+            - .:/var/project/dice
+        working_dir: /var/project/dice
+        command: sleep infinity
