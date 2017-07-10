@@ -1,1 +1,2 @@
-chall-cube==1.0.0
+chall-cube>=1.0.0
+gpiocrust>=1.0.0

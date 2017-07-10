@@ -8,7 +8,7 @@ install:
 run:
 	docker-compose up -d
 
-	docker exec -it dice_python /bin/bash -c "python dice.py"
+	docker exec -it dice_python /bin/bash -c "python dice"
 
 bash:
 	docker-compose up -d

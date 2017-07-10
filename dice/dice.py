@@ -1,8 +1,8 @@
 from chall_cube.Cube import Cube
+from chall_cube.device.Accelerometer import Accelerometer
 from chall_cube.face.BlankFace import BlankFace
 from chall_cube.face.BlockingFace import BlockingFace
-from chall_cube.sensor.Accelerometer import Accelerometer
-from dice.face.GravityPathFace import GravityPathFace
+from face.gravity_path_face.GravityPathFace import GravityPathFace
 
 accelerometer = Accelerometer()
 
@@ -17,4 +17,8 @@ faces = [
 
 dice = Cube(faces)
 
+print('Starting dice...')
+
 dice.start()
+
+print('Dice end.')
