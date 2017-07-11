@@ -2,9 +2,13 @@ version: '2'
 
 services:
     python:
-        image: python:3.6-alpine
+        image: resin/raspberry-pi-python:3.6-slim
         container_name: dice_python
         volumes:
             - .:/var/project/dice
+            - /sys
+        devices:
+            - /dev/mem
+            - /dev/gpiomem
         working_dir: /var/project/dice
         command: sleep 10000000

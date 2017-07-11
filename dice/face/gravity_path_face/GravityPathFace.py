@@ -18,13 +18,13 @@ class GravityPathFace(Face):
         self.print('Running gravity path face.')
 
         with Header() as header:
-            led_middle_red = OutputPin(15, value=1)
-            led_middle_green = OutputPin(16, value=0)
+            led_middle_red = OutputPin(8, value=1)
+            led_middle_green = OutputPin(10, value=0)
             led_paths = [
-                OutputPin(17, value=1),
+                OutputPin(12, value=1),
+                OutputPin(16, value=1),
                 OutputPin(18, value=1),
-                OutputPin(19, value=1),
-                OutputPin(20, value=1)
+                OutputPin(22, value=1)
             ]
 
             while not self.__has_stop_request:
