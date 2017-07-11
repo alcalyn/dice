@@ -2,12 +2,12 @@ all: install run
 
 install:
 	docker-compose up -d
-	docker exec -it dice_python /bin/sh -c "pip install -r requirements.txt"
+	docker exec -it dice_python bash -c "pip install -r requirements.txt"
 
 run:
 	docker-compose up -d
-	docker exec -it dice_python /bin/sh -c "python dice"
+	docker exec -it dice_python bash -c "python dice"
 
 bash:
 	docker-compose up -d
-	docker exec -it dice_python /bin/sh
+	docker exec -it dice_python bash

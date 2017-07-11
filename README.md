@@ -13,6 +13,12 @@ Requires git, Docker and docker-compose.
 git clone git@github.com:alcalyn/dice.git
 cd dice/
 
+# Only for RaspberryPi:
+cp docker/docker-compose.rpi.yml docker-compose.override.yml
+
+# Only to develop on AMD64:
+cp docker/docker-compose.amd64.yml docker-compose.override.yml
+
 # Install dependencies and run dice
 make
 ```
