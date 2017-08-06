@@ -2,6 +2,7 @@ version: '2'
 
 services:
     python:
+        privileged: true
         volumes:
             - .:/var/project/dice
             - /sys
