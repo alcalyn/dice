@@ -2,10 +2,10 @@ version: '2'
 
 services:
     python:
-        image: resin/raspberry-pi-python:3.6-slim
         volumes:
             - .:/var/project/dice
             - /sys
         devices:
             - /dev/mem
             - /dev/gpiomem
+            - /dev/i2c-1

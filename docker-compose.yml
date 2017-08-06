@@ -2,7 +2,7 @@ version: '2'
 
 services:
     python:
-        image: resin/raspberry-pi-python:3.6-slim
+        build: docker/rpi
         container_name: dice_python
         volumes:
             - .:/var/project/dice

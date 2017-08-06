@@ -1,3 +1,4 @@
 RPi.GPIO>=0.6.3
 chall-cube>=1.0.0
 gpiocrust>=1.0.0
+git+https://github.com/marsminds/shiftr_74HC595.git
