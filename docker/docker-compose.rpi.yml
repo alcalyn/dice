@@ -5,6 +5,7 @@ services:
         volumes:
             - .:/var/project/dice
             - /sys
+            - /lib/modules
         devices:
             - /dev/mem
             - /dev/gpiomem

@@ -6,5 +6,6 @@ services:
         container_name: dice_python
         volumes:
             - .:/var/project/dice
+            - ../chall-cube:/var/project/chall-cube
         working_dir: /var/project/dice
         command: sleep 10000000
