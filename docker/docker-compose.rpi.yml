@@ -2,6 +2,7 @@ version: '2'
 
 services:
     python:
+        build: docker/rpi
         privileged: true
         volumes:
             - .:/var/project/dice
