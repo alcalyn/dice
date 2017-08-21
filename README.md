@@ -44,7 +44,7 @@ Dice will now use the local chall-cube sources
 instead of dist package.
 
 
-## Not on RaspberryPi
+## Not on RaspberryPi ?
 
 To develop on PC and avoid error like "Only work on RaspberryPi" from GPIO or I2C, do:
 
