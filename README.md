@@ -44,6 +44,28 @@ Dice will now use the local chall-cube sources
 instead of dist package.
 
 
+## Not on RaspberryPi
+
+To develop on PC and avoid error like "Only work on RaspberryPi" from GPIO or I2C, do:
+
+- Install `fake_rpi`
+
+```
+pip install git+https://github.com/alcalyn/fake_rpi.git
+```
+
+- Add this at beginning of `dice/dice.py` to fake `RPi.GPIO` and `smbus`
+
+``` python
+# Replace libraries by fake ones
+import sys
+import fake_rpi
+
+sys.modules['smbus'] = fake_rpi.smbus
+sys.modules['RPi'] = fake_rpi.RPi
+```
+
+
 ## License
 
 This project is under [AGPL-3.0 License](LICENSE).
