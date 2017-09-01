@@ -17,8 +17,6 @@ class GravityPathFace(Face):
     def start(self):
         self.print('Running gravity path face.')
 
-        GPIO.setmode(GPIO.BOARD)
-
         self.__has_stop_request = False
         shift_register = ShiftRegister(40, 38, 36)
 
@@ -87,5 +85,3 @@ class GravityPathFace(Face):
             self.print(' ; '.join(str(i) for i in path_trackers))
 
             sleep(0.1)
-
-        GPIO.cleanup()
