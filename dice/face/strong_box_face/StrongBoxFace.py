@@ -1,8 +1,7 @@
-import RPi.GPIO as GPIO
 import random
 from time import sleep
 from chall_cube.face.Face import Face
-from .KY040 import KY040
+from ky040.KY040 import KY040
 
 
 class StrongBoxFace(Face):
