@@ -49,8 +49,6 @@ class GravityPathFace(Face):
         while not self.__has_stop_request:
             current_face = self.__accelerometer.get_current_face()
 
-            self.print('Dice: %d' % (current_face))
-
             for i in range(0, 4):
                 if path_resolved[i]:
                     continue
@@ -81,7 +79,5 @@ class GravityPathFace(Face):
                         shift_register.setOutput(MIDDLE_GREEN, GPIO.HIGH)
                         shift_register.latch()
                         break
-
-            self.print(' ; '.join(str(i) for i in path_trackers))
 
             sleep(0.1)
