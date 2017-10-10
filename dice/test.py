@@ -17,15 +17,15 @@ faces = [
     BlankFace(),
     BlankFace(),
     BlankFace(),
-    GravityPathFace(accelerometer, 18, 23, 24),
+    GravityPathFace(accelerometer, 12, 16, 18),
     BlankFace()
 ]
 
 dice = Cube(faces)
 
-print('Starting dice...')
+print('Testing dice...')
 
-dice.start()
+dice.test()
 GPIO.cleanup()
 
-print('Dice stopped.')
+print('Dice tests stopped.')
